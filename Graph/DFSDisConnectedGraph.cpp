@@ -22,7 +22,7 @@ void dfsRec(vector<int> adj[], int s, bool visited[]) // TC: O(V+E)
     }
 }
 
-void dfs(vector<int> adj[], int v, int s)
+void dfs(vector<int> adj[], int v)
 {
     bool visited[v + 1];
     for (int i = 0; i < v; i++)
@@ -44,7 +44,7 @@ int main()
     addEdge(adj, 1, 2);
     addEdge(adj, 3, 4);
 
-    dfs(adj, v, 0);
+    dfs(adj, v);
 
     return 0;
 }
