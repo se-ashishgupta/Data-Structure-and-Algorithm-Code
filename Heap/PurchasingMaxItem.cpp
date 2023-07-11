@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int purchaseMaxItem(int arr[], int n, int sum) // TC : O(n)
+int purchaseMaxItem(int arr[], int n, int sum) // TC : O(n) + O(res*logn)
 {
     priority_queue<int, vector<int>, greater<int>> pq;
 

@@ -18,7 +18,7 @@ int height(Node *root) // TC: O(n) AS: Theta(h+1)=Theta(h) h is height of tree
     if (root == NULL)
         return 0;
     else
-        return max(height(root->left), height(root->right)) + 1;
+        return min(height(root->left), height(root->right)) + 1;
 }
 
 int main()

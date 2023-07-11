@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-void kClosestElementNaive(int arr[], int n, int x, int k) // TC : O(nlogk)
+void kClosestElementNaive(int arr[], int n, int x, int k) // TC : O(nk)
 {
     bool visited[n] = {false};
     for (int i = 0; i < k; i++)

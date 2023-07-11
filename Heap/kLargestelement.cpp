@@ -19,7 +19,7 @@ void kLargestElement(int arr[], int n, int k) // TC : O(n+klogn) MAX HEAP
         pq.pop();
     }
 }
-void kLargestElement1(int arr[], int n, int k) // TC : O(n+(n-k)logk) Min HEAP
+void kLargestElement1(int arr[], int n, int k) // TC : O(k+(n-k)logk) Min HEAP
 {
     priority_queue<int, vector<int>, greater<int>> pq;
 
