@@ -31,8 +31,10 @@ Node *ReverseLinkedListNaive(Node *head) // Two Traversal and AS:O(n)
     if (head == NULL || head->next == NULL)
         return head;
     Node *rest_head = ReverseLinkedListNaive(head->next);
-    Node *rest_tail = head->next;
-    rest_tail->next = head;
+    // Node *rest_tail = head->next;
+    // rest_tail->next = head;
+    // or
+    head->next->next = head;
     head->next = NULL;
     return rest_head;
 }
