@@ -53,7 +53,7 @@ void spiralTraversal2(Node *root) // Tc:O(n) and item process 2 time
     stack<Node *> s1;
     stack<Node *> s2;
     s1.push(root);
-    while (s1.empty() == false && !s2.empty() == false)
+    while (s1.empty() == false || s2.empty() == false)
     {
         while (s1.empty() == false)
         {
@@ -85,7 +85,7 @@ int main()
     root->right = new Node(30);
     root->right->left = new Node(40);
     root->right->right = new Node(50);
-    spiralTraversal1(root);
+    spiralTraversal2(root);
 
     return 0;
 }
